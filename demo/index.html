@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "cascadia.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Cascadia</h1>
+      <label for="show-navigation">&#9776;</label>
+      <input aria-checked="true" id="show-navigation" type="checkbox">
+      <nav role="navigation">
+        <a href="/" rel="home">Home</a><a>About</a>
+      </nav>
+      <figure>
+        <img src="banner.svg" alt="">
+      </figure>
+    </header>
+    <main>
+      <h1>Example Usage</h1>
+
+      <p>Cascadia is a <a href="http://sass-lang.com">SASS</a> theme to bootstrap your way to a simple mobile-friendly website. It features a fixed-height image header and a mobile-friendly menu for up to four links.</p>
+
+      <figure class="thumbnail">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/PacNW_satellite_cropped.JPG">
+      </figure>
+
+      <p>The Pacific Northwest, sometimes referred to as <a href="https://en.wikipedia.org/wiki/Pacific_Northwest">Cascadia</a>, is a region in western North America characterized by its mountainous geography, liberal culture, and temperate climate. It includes the Canadian province of British Columbia, the US states of Oregon and Washington, and the watersheds of the rivers flowing to the Pacific through North America's temperate rainforests.</p>
+
+      <hr>
+
+      <h2>Usage</h2>
+      <p>First, make sure your webpage follows the structure illustrated in <code>TEMPLATE.html</code>. Compile the main stylesheet with
+      <pre><code>sass --load-path . main.scss</code></pre> and add the resulting CSS to your project.</p>
+
+      <h2>Customization</h2>
+      <p>The color scheme (among other things) can be customized in <code>_settings.scss</code>. Any variables defined there will override the default options in <code>partials/_base.scss</code>.</p>
+    </main>
+  </body>
+</html>

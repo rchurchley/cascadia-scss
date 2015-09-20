@@ -1,0 +1,50 @@
+//  _reset.scss
+//
+//  Reset default CSS rendering for predictable results across modern browsers.
+//  Partially based on normalize.css v3.0.2 | MIT License | git.io/normalize
+//
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // Prevent mobile text size adjust after orientation change.
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+%clearfix::after {
+  // Ensure block elements resize to fit their contents, including floats.
+  // Based on http://nicolasgallagher.com/micro-clearfix-hack/
+  display: table;
+  clear: both;
+  content: '';
+}
+
+body,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  @extend %clearfix;
+  display: block;
+  position: relative;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}

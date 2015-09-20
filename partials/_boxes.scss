@@ -1,0 +1,54 @@
+//  _boxes.scss
+//
+//  Styles for block elements, including pre, lists, and images.
+//
+
+@import 'base';
+
+aside,
+blockquote,
+pre {
+  @include fullwidth;
+  @include gutters;
+}
+
+pre,
+pre code {
+  background-color: $code-background;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  white-space: pre-wrap;
+  color: $code-text;
+  word-wrap: break-word;
+}
+
+hr {
+  clear: both;
+  margin: 1.25rem 0;
+  border: thin solid nth($base-colors, 3);
+}
+
+img,
+figcaption {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding: 5px;
+  text-align: center;
+}
+
+.thumbnail {
+  float: left;
+  clear: left;
+  margin-right: 1em;
+  text-align: center;
+
+  img {
+    border-radius: 1em;
+    width: auto;
+    max-width: 6em;
+  }
+}

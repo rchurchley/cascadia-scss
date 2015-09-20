@@ -1,0 +1,70 @@
+//  _base.scss
+//
+//  Common variables and mixins to be included in all other partials.
+//
+
+@import '../../local/settings/*';
+
+//  I. Fonts
+
+$body-font: system, -apple-system, "Helvetica Neue", sans-serif !default;
+$code-font: Inconsolata, monospace !default;
+
+$body-font-size: large !default;
+
+
+//  II. Colors
+
+$base-colors:    #323a44, #b3bdc4, #b3bdc4, #ebf0f4, #f5f9fb !default;
+$splash-colors:  #0098e9, #ff297f, #a44bcc                   !default;
+
+$header-text:     nth($base-colors, 5)   !default;
+$headline-color:  nth($base-colors, 1)   !default;
+$code-text:       nth($base-colors, 5)   !default;
+$code-background: nth($base-colors, 1)   !default;
+
+
+//  II. Breakpoints
+
+$max-width:  640px  !default;
+$breakpoint: 640px  !default;
+
+@mixin mobile {
+  @media screen and (max-width: $breakpoint - 1) {
+    @content
+  }
+}
+
+@mixin widescreen {
+  @media screen and (min-width: $breakpoint) {
+    @content
+  }
+}
+
+
+//  III. Gutters
+
+$gutter-fraction: 1/16 !default;
+
+@mixin gutters {
+  @include widescreen {
+    padding-right: $gutter-fraction * $max-width;
+    padding-left: $gutter-fraction * $max-width;
+  }
+
+  @include mobile {
+    padding-right: $gutter-fraction * 100%;
+    padding-left: $gutter-fraction * 100%;
+  }
+}
+
+$gutter-relto-child: $gutter-fraction / (1-2*$gutter-fraction);
+
+@mixin fullwidth {
+  width: (1 + 2 * $gutter-relto-child) * 100%;
+  max-width: (1 + 2 * $gutter-relto-child) * 100%;
+  margin-left: -$gutter-relto-child * 100%;
+  margin-right: -$gutter-relto-child * 100%;
+  padding-left: $gutter-relto-child * 100%;
+  padding-right: $gutter-relto-child * 100%;
+}

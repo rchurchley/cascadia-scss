@@ -1,0 +1,88 @@
+//  HEADER  ///////////////////////////////////////////////////////////////////
+//
+//  Set the position, size, and behaviour of the site header, including the
+//  site title and navigation menu.
+//
+
+@import 'base';
+
+$header-height: 9rem  !default;
+
+.site-header {
+  min-height: $header-height;
+  color: $header-text;
+
+  input {
+    display: none;
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0;
+    max-height: 100%;
+    overflow: hidden;
+
+    img {
+      margin: 0;
+      min-height: $header-height;
+    }
+  }
+
+  h1 {
+    position: absolute;
+    margin: 0;
+    line-height: 1/3 * $header-height;
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  label,
+  nav {
+    display: block;
+    z-index: 10;
+    margin: 0;
+    overflow: hidden;
+    text-align: right;
+    line-height: 1/3 * $header-height;
+    font-size: 90%;
+  }
+
+  @include widescreen {
+    label { display: none; }
+    nav { white-space: nowrap; }
+    nav a:not(:last-of-type)::after {
+      content: ' • ';
+    }
+  }
+
+  @include mobile {
+    nav {
+      transition: all .2s ease-in-out;
+
+      a {
+        display: inline-block;
+        border-top: 1px solid;
+        width: 50%;
+        text-align: center;
+        line-height: 1/3 * $header-height;
+      }
+    }
+
+    input:not(:checked) {
+      + nav { max-height: 0; }
+    }
+
+    input:checked {
+      + nav { max-height: 2/3 * $header-height; }
+    }
+  }
+}

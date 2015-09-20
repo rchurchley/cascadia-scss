@@ -1,0 +1,34 @@
+//  LAYOUT  ///////////////////////////////////////////////////////////////////
+//
+//  Set the position, size, and background color of major layout elements.
+//
+
+@import 'base';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: nth($base-colors, 4);
+  padding: 0;
+}
+
+body > header,
+body > main,
+body > footer {
+  @include gutters;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: $max-width;
+}
+
+main {
+  background-color: nth($base-colors, 5);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: calc(100% - 9rem);
+}
