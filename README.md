@@ -1,6 +1,6 @@
 # Cascadia
 
-Cascadia is a [SASS](http://sass-lang.com) theme to bootstrap your way to a simple responsive website. It features a header image and a mobile-friendly navigation menu (for up to four links). Check out [the demo](https://cdn.rawgit.com/rchurchley/cascadia/master/demo/index.html) to see it in action.
+Cascadia is a [SASS](http://sass-lang.com) theme to bootstrap your way to a simple responsive website. It features a header image and a mobile-friendly navigation menu (for up to four links). Check out [the demo](https://cdn.rawgit.com/rchurchley/cascadia-scss/master/demo/index.html) to see it in action.
 
 
 ## Usage
