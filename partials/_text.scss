@@ -86,10 +86,13 @@ main {
     font-family: $code-font;
   }
 
+  dt {
+    font-style: italic;
+  }
+
   address,
   figcaption,
-  nav a,
-  nav a:visited,
+  nav,
   time,
   .footnotes {
     color: nth($base-colors, 2);
@@ -100,6 +103,11 @@ main {
   time {
     display: block;
     text-align: right;
+  }
+
+  nav a,
+  nav a:visited {
+    color: inherit;
   }
 
   nav a:not(:last-of-type)::after {
