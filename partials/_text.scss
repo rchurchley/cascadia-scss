@@ -37,7 +37,7 @@ main {
   li p,
   dt,
   dd {
-    @include parskip(0.5);
+    @include parskip(.5);
   }
 
   dd {
