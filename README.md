@@ -59,6 +59,11 @@ Breakpoint below which the mobile menu is used
 $breakpoint: 640px;
 ```
 
+The default margin after paragraphs and other elements
+```sass
+$parskip: 1.25rem;
+```
+
 The proportion of `main` to be used for each gutter
 ```sass
 $gutter-fraction: 1/16;

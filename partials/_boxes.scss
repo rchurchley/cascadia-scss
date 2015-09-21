@@ -5,6 +5,14 @@
 
 @import 'base';
 
+section {
+  @include parskip(1.5);
+}
+
+nav {
+  @include parskip(1);
+}
+
 aside,
 blockquote,
 pre {
