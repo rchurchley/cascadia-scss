@@ -36,16 +36,18 @@ hr {
   border: thin solid nth($base-colors, 3);
 }
 
+figure {
+  text-align: center;
+}
+
 img,
 figcaption {
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
 figcaption {
   padding: 5px;
-  text-align: center;
 }
 
 .thumbnail {
