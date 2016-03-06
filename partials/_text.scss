@@ -90,6 +90,14 @@ main {
     font-style: italic;
   }
 
+  figure {
+    line-height: 0;
+  }
+
+  figcaption {
+    line-height: 1.4;
+  }
+
   address,
   figcaption,
   nav,
