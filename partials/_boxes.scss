@@ -51,9 +51,10 @@ figcaption {
 }
 
 .thumbnail {
-  float: left;
-  clear: left;
-  margin-right: 1em;
+  float: right;
+  clear: right;
+  margin-left: 1em;
+  margin-bottom: 1ex;
   text-align: center;
 
   img {
