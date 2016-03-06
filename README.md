@@ -38,7 +38,7 @@ $base-colors: #323a44, #4f5a66, #b3bdc4, #ebf0f4, #f5f9fb;
 
 "Splash" colour palette, used respectively for a, a:hover, a:visited.
 ```sass
-$splash-colors:  #0098e9, #ff297f, #a44bcc
+$splash-colors:  #0098e9, #ff297f, #a342b4
 ```
 
 The color of the header, headlines, and code.
